@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latinoamérica Marketplaces</title>
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #264653 0%, #2a9d8f 100%);
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            --card-hover: translateY(-5px);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: var(--primary-gradient);
+            color: #ffffff;
+            min-height: 100vh;
+            width: 100%;
+            padding: 1rem;
+        }
+
+        header {
+            width: 100%;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .market-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+
+        .market-card {
+            background-color: #ffffff;
+            color: #333333;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .market-card:hover {
+            transform: var(--card-hover);
+        }
+
+        .card-header {
+            background-color: #f4a261;
+            padding: 1.5rem;
+            position: relative;
+        }
+
+        .card-header h2 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .card-link {
+            font-weight: 600;
+            color: #2a9d8f;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .world-marketplace {
+            background: linear-gradient(135deg, #1A237E 0%, #3949AB 100%);
+            color: white;
+            padding: 3rem 2rem;
+            margin: 3rem auto;
+            border-radius: 1rem;
+            text-align: center;
+            max-width: 1200px;
+        }
+
+        .world-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .continent-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .continent-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            width: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .continent-card:hover {
+            transform: var(--card-hover);
+        }
+
+        .special-button {
+            background-color: #f4a261;
+            color: #ffffff;
+            padding: 0.85rem 1.75rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .special-button:hover {
+            transform: translateY(-3px);
+            background-color: #f08a00;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Latinoamérica Marketplaces</h1>
+        <p>Descubre y conecta con los mejores marketplaces de América Latina. Una puerta a miles de productos y servicios locales.</p>
+    </header>
+
+    <div class="market-container">
+        <!-- Argentina -->
+        <a href="#" class="market-card">
+            <div class="card-header">
+                <h2>Argentina Market</h2>
+            </div>
+            <div class="card-content">
+                <p>Explora el marketplace argentino, donde encontrarás desde productos artesanales hasta tecnología local. Conecta con vendedores de todas las provincias.</p>
+                <span class="card-link">Explorar Argentina Market →</span>
+            </div>
+        </a>
+
+        <!-- Brasil -->
+        <a href="#" class="market-card">
+            <div class="card-header">
+                <h2>Brasil Market</h2>
+            </div>
+            <div class="card-content">
+                <p>El marketplace más grande de Brasil, con productos de todas las regiones. Desde artesanías amazónicas hasta moda de São Paulo.</p>
+                <span class="card-link">Explorar Brasil Market →</span>
+            </div>
+        </a>
+
+        <!-- México -->
+        <a href="#" class="market-card">
+            <div class="card-header">
+                <h2>México Market</h2>
+            </div>
+            <div class="card-content">
+                <p>Descubre la riqueza cultural mexicana a través de su marketplace. Artesanías, gastronomía y productos locales de todo el país.</p>
+                <span class="card-link">Explorar México Market →</span>
+            </div>
+        </a>
+
+        <!-- Colombia -->
+        <a href="#" class="market-card">
+            <div class="card-header">
+                <h2>Colombia Market</h2>
+            </div>
+            <div class="card-content">
+                <p>Conecta con vendedores colombianos y descubre productos únicos. Desde café premium hasta artesanías tradicionales.</p>
+                <span class="card-link">Explorar Colombia Market →</span>
+            </div>
+        </a>
+
+        <!-- Chile -->
+        <a href="#" class="market-card">
+            <div class="card-header">
+                <h2>Chile Market</h2>
+            </div>
+            <div class="card-content">
+                <p>El marketplace chileno que une a compradores y vendedores de todo el país. Productos del norte al sur de Chile.</p>
+                <span class="card-link">Explorar Chile Market →</span>
+            </div>
+        </a>
+
+        <!-- Perú -->
+        <a href="#" class="market-card">
+            <div class="card-header">
+                <h2>Perú Market</h2>
+            </div>
+            <div class="card-content">
+                <p>Explora la diversidad peruana en un solo lugar. Artesanías andinas, productos amazónicos y lo mejor de cada región.</p>
+                <span class="card-link">Explorar Perú Market →</span>
+            </div>
+        </a>
+
+        <!-- Ecuador -->
+        <a href="#" class="market-card">
+            <div class="card-header">
+                <h2>Ecuador Market</h2>
+            </div>
+            <div class="card-content">
+                <p>Encuentra productos ecuatorianos únicos. Desde artesanías de Otavalo hasta productos gourmet de Galápagos.</p>
+                <span class="card-link">Explorar Ecuador Market →</span>
+            </div>
+        </a>
+
+        <!-- Uruguay -->
+        <a href="#" class="market-card">
+            <div class="card-header">
+                <h2>Uruguay Market</h2>
+            </div>
+            <div class="card-content">
+                <p>El marketplace uruguayo con los mejores productos locales. Descubre el talento y la calidad de los emprendedores uruguayos.</p>
+                <span class="card-link">Explorar Uruguay Market →</span>
+            </div>
+        </a>
+
+        <!-- Paraguay -->
+        <a href="#" class="market-card">
+            <div class="card-header">
+                <h2>Paraguay Market</h2>
+            </div>
+            <div class="card-content">
+                <p>Conecta con vendedores paraguayos y descubre productos tradicionales y modernos. Lo mejor del comercio local.</p>
+                <span class="card-link">Explorar Paraguay Market →</span>
+            </div>
+        </a>
+    </div>
+
+    <!-- World Marketplaces -->
+    <section class="world-marketplace">
+        <h2 class="world-title">World Marketplaces</h2>
+        <p>Explora mercados de todo el mundo y descubre productos únicos de cada continente</p>
+        
+        <div class="continent-list">
+            <div class="continent-card">
+                <h3>Europa</h3>
+                <p>20+ países</p>
+            </div>
+            <div class="continent-card">
+                <h3>Asia</h3>
+                <p>30+ países</p>
+            </div>
+            <div class="continent-card">
+                <h3>África</h3>
+                <p>25+ países</p>
+            </div>
+            <div class="continent-card">
+                <h3>Oceanía</h3>
+                <p>10+ países</p>
+            </div>
+            <div class="continent-card">
+                <h3>Norteamérica</h3>
+                <p>3 países</p>
+            </div>
+        </div>
+
+        <a href="#" class="special-button">Explorar World Market</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 World Marketplaces Network. Conectando comercios locales globalmente.</p>
+        <p>Presente en más de 100 países | 500,000+ vendedores | 50M+ productos</p>
+    </footer>
+</body>
+</html>
+</qodoArtifact>
+
